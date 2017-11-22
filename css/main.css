@@ -27,8 +27,8 @@
 #sc-container > h2.subtitle,
 #about-s > .align-proove > h2.subtitle,
 #contact > .contact-container > .subtitle{
-   text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
  }
 
 #nav-container {
@@ -164,6 +164,10 @@ section.portfolio-gallery {
   padding-top: 0;
 }
 
+section.portfolio-gallery img:hover {
+  opacity: .5;
+}
+
 h2.subtitle {
   color: #fff;
 }
@@ -250,8 +254,106 @@ input.message {
   padding-bottom: 215px;
 }
 
+a.button2 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  background-color: #18BC9C;
+  position: relative;
+  left: 310px;
+  top: 45px;
+  width: 75px;
+  height: 51px;
+  padding: 12px 17px;
+  border-radius: 5px;
+  border-color: #18BC9C;
+  color:#FFF;
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
 
+a.button2:hover {
+  background: #128F76;
+}
 
+footer.footer{
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+  background: #2C3E50;
+  width: 100%;
+  height: 350px;
+  padding: 40px;
+}
 
+section.container-footer h3.title-footer{
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 30px;
+}
 
-/*font-family: 'Lato', sans-serif;*/
+.text-footer {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.final-footer {
+  text-align: center;
+}
+
+.container-footer > div {
+  width: 32%;
+  float: left;
+  text-align: center;
+  color: #fff;
+}
+
+.container-footer {
+  max-width: 1025px;
+  margin: 0 auto;
+}
+
+.media {
+  text-align: center;
+  color: #fff;
+  margin: 9px;
+}
+
+.information {
+  margin: 5px;
+  width: 40%;
+}
+
+.media i {
+  font-size: 20px;
+  line-height: 45px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.media i:hover {
+  color: #18bc9c;
+  border: solid 2px #fff;
+  background: #fff;
+}
+
+span {
+  color: #18BC9C;
+  text-decoration: none;
+}
+
+span:hover {
+  text-decoration: underline;
+}
+
+.derechos{
+  position: relative;
+  top: 115px;
+  left: 340px;
+  text-align: center;
+  color:#fff;
+  font-size: 14px;
+}
