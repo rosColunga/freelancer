@@ -1,6 +1,4 @@
-/*
- * Estilos de tu proyecto
- */
+/*Aplicando selector universal en contenedor*/
  *, ::after, ::before {
    box-sizing: border-box;
    margin: 0;
@@ -12,6 +10,14 @@
   cursor: pointer;
  }
 
+ body {
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   font-family: 'Montserrat', sans-serif;
+ }
+
+/*Selectores reutilizables de float y uppercase*/
  .float.left {
   float: left;
   text-align: left;
@@ -31,6 +37,11 @@
   font-family: 'Montserrat', sans-serif;
  }
 
+#first-video {
+  outline: 5px solid red;
+}
+
+/*Selectores reutilizables de float y uppercase*/
 #nav-container {
   position: fixed;
   display: inline-block;
@@ -51,13 +62,6 @@
   margin: 0 5px;
 }
 
-body {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  font-family: 'Montserrat', sans-serif;
-}
-
 #fs-container {
   height: 700px;
   width: 100%;
@@ -68,6 +72,7 @@ body {
   vertical-align: middle;
 }
 
+/*Alineamiento y estilos de imagen y título*/
 img {
   vertical-align: middle;
 }
@@ -79,6 +84,7 @@ h1 {
   vertical-align: middle;
 }
 
+/*Estilo de pleca divisoria y decorativa*/
 hr.line-light {
   width: 120px;
   margin: 25px auto 30px;
@@ -91,6 +97,7 @@ hr.line-light {
   display: inline-block;
 }
 
+/*Estilo y posición del icono*/
 i.fa {
   color: #FFF;
   font-size: 30px;
@@ -99,6 +106,7 @@ i.fa {
   text-align: center;
 }
 
+/*Pleca obscura*/
 hr.line-dark{
   width: 120px;
   margin: 25px auto 30px;
@@ -111,6 +119,7 @@ hr.line-dark{
   vertical-align:middle;
 }
 
+/*Segunda sección*/
 #sc-container {
   margin-top: 80px;
   margin-bottom: 0;
@@ -129,6 +138,7 @@ hr.line-dark{
   display: inline-block;
 }
 
+/*Alineamiento de plecas*/
 .line-star-dark{
   text-align: center;
 }
@@ -137,6 +147,7 @@ hr.line-dark{
   text-align: center;
 }
 
+/*Estilo de subtítulos y encabezados*/
 h2.main-subtitles {
   font-weight: 300;
   font-family: 'Lato', sans-serif;
@@ -148,11 +159,13 @@ h2.subtitle {
   text-align: center;
 }
 
+/*Galería de imágenes del portafolio*/
 .portfolio-gallery img {
   width: 95%;
   text-align: center;
 }
 
+/*Estructura grid*/
 section.portfolio-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -178,6 +191,7 @@ h2.subtitle {
   margin: 0;
 }
 
+/*Texto a dos columnas, estructura*/
 .two-columns {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -210,6 +224,7 @@ div.two-columns > p {
   top: 13%;
 }
 
+/*Botón de descarga*/
 .button {
   color: white;
   font-size: 20px;
@@ -233,7 +248,7 @@ div.button:hover, i.fa-download:hover {
   height: 937px;
   margin-top: 80px;
 }
-
+/*Formulario*/
 input[type="text"] {
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
@@ -254,6 +269,7 @@ input.message {
   padding-bottom: 215px;
 }
 
+/*Botón de enviar*/
 a.button2 {
   font-family: "Lato", sans-serif;
   font-weight: bold;
@@ -275,6 +291,7 @@ a.button2:hover {
   background: #128F76;
 }
 
+/*Estilos footer*/
 footer.footer{
   font-family: "Montserrat", sans-serif;
   color: #FFF;
@@ -311,6 +328,7 @@ section.container-footer h3.title-footer{
   margin: 0 auto;
 }
 
+/*Redes sociales*/
 .media {
   text-align: center;
   color: #fff;
@@ -334,10 +352,13 @@ section.container-footer h3.title-footer{
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
+
+/*Interacción al seleccionar con cursor*/
 .media i:hover {
   color: #18bc9c;
   border: solid 2px #fff;
   background: #fff;
+  cursor: pointer;
 }
 
 span {
@@ -345,11 +366,14 @@ span {
   text-decoration: none;
 }
 
+/*Texto resaltado*/
 span:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
-.derechos{
+/*Derechos de autor*/
+.rights{
   position: relative;
   top: 115px;
   left: 340px;
